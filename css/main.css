@@ -1,0 +1,206 @@
+/* GLOBAL */
+
+
+:root{
+    --maroon:#840813;
+}
+
+* ,*::after, *::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* MAIN HEADER */
+.main-header{
+    height: 80px;
+    padding: 0 80px;
+    background-color: var(--maroon);
+}
+
+
+img.header-logo{
+    width: 60px;
+    margin-top: 10px;
+}
+
+.system-menu{
+    background-image: url("/sps/img/system/bgPhil.png");
+    background-position: center;
+    background-size: cover;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* HOME MENU */
+.system-menu .menu-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.system-menu .menu-wrapper a{
+    position: relative;
+}
+
+.system-menu .menu-wrapper img {
+    width: 250px;    
+    position: relative;
+    transition: top ease-in 2s;
+}
+
+
+.system-menu img:hover {
+    top: -1rem;  
+}
+
+@media screen and (max-width:770px) {
+    .system-menu img {
+        width: 150px;    
+    }
+}
+
+/* MMOBILE DEVICE HEADER */
+@media screen and (max-width:550px) {
+    .system-menu img {
+        width: 100x;    
+    }
+
+    .main-header{
+        padding: 0 20px;
+        height: 50px;
+    }
+}
+
+
+/* SYSTEM MENU BOTTOM */
+.system-menu-bottom{
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 -2px 2px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0 -2px 2px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0 -2px 2px 0px rgba(0,0,0,0.24);
+}
+
+.system-menu-bottom .menu-wrapper{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.system-menu-bottom .menu-wrapper img{
+    width:80px;
+  
+}
+
+.system-menu-bottom .menu-wrapper img:hover{
+    opacity: .7;
+    transition: all ease 1s;
+}
+
+.active-img{
+    filter:sepia(1)
+}
+
+
+
+/* SCHOOL FEED */
+.school-feed{
+    margin: 0 80px 100px 80px;
+    display: flex;
+}
+
+/* MMOBILE DEVICE SCHOOL FEED */
+@media screen and (max-width:550px) {
+    .school-feed{
+        margin: 0 20px 100px 2px;
+        display: flex;
+
+    }
+}
+
+.school-feed-section{
+    width: 60%;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.accordion-button:not(.collapsed){
+    color: black;
+    background-color: rgba(208, 76, 20, 0.125);
+}
+
+
+.feed-analytics{
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 2rem;
+    padding: .9rem;
+    order: 2;
+    height: min-content;
+    
+
+    box-shadow: 0 2px 1px 0px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0 2px 1px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0 2px 1px 0px rgba(0,0,0,0.24);
+}
+
+.analyticsCard{
+    padding: 12px 18px;
+    border: 1px solid #840813;
+    border-radius: 4px;
+    display: inline-block;
+    margin: .5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:550px) {
+    .analyticsCard{
+        padding: .2rem .4rem;
+    }
+
+    .analyticsCard h5{
+        font-weight: 400;
+        font-size: 12px ;
+    }
+
+    .system-menu-bottom .menu-wrapper img{
+        width:60px;
+    }
+}
+
+
+.btn:focus{
+    outline: none;
+}
+
+@media screen and (max-width:1100px) {
+    .school-feed-section{
+        width: auto;
+        margin: 0 20px;    
+    }
+
+    .feed-analytics{
+        margin: 2rem 0;
+    }
+    
+    .school-feed{
+        display: block;
+    }
+
+}
