@@ -43,8 +43,8 @@
             
             <!-- SCHOOL MAIN NEWS -->
             <div class="school-feed-section">
-                <h1 class="mt-4">School Feed</h1>
-                <a href="#" style="color: white;" class="btn btn-warning"> Add Post <i class="fa-solid fa-plus"></i></a>
+                <h1 class="mt-4 h1">School Feed</h1>
+                <a href="addSF.php" style="color: white;" class="btn btn-warning"> Add Post <i class="fa-solid fa-plus"></i></a>
                 <div class="accordion" id="accordionPanelsStayOpenExample">
                     
                     <?php for($i=1; $i<=50; $i++ ): ?>
@@ -58,7 +58,7 @@
                             <div class="accordion-body">
 
                                 <h2>Sample Heading</h2> 
-                                <p><span class="fs-5 fw-semi0">Sample Author</span></p>
+                                <p><span class="fs-5 fw-semi0">Sample Author</span> | <span class="fw-bold text-secondary"> 1 April 2022 </span></p>
                                 <p>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit vitae, temporibus consectetur dolorum quam unde id consequuntur harum possimus laborum veniam atque eos natus ad culpa earum in iure. Deserunt labore in mollitia id quis aperiam inventore excepturi nam sapiente facere minima optio nulla ab placeat commodi quia nemo, perferendis eveniet ipsum vero error dolorum est laboriosam! Quis enim expedita, perspiciatis suscipit repellendus quaerat obcaecati fuga cupiditate commodi quos, dignissimos ad consequuntur ratione quo necessitatibus, recusandae vero facere fugiat animi nisi. Nihil, dicta? Alias aliquam cumque molestiae ratione dolores ducimus tempora ipsum illo tempore eveniet, aut sed repellat reprehenderit. Ut!
                                 </p>

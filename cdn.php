@@ -8,3 +8,10 @@
 
     <!-- FONT AWESOME -->
     <script src="https://kit.fontawesome.com/60d9c0509e.js" crossorigin="anonymous"></script>
+
+    <!-- CKEDITOR -->
+    <script src="//cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
+
+    <!-- BULMA -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">

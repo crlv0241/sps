@@ -51,7 +51,7 @@ img.header-logo{
 }
 
 .system-menu .menu-wrapper img {
-    width: 250px;    
+    width: 200px;    
     position: relative;
     transition: top ease-in 2s;
 }
@@ -69,14 +69,20 @@ img.header-logo{
 
 /* MMOBILE DEVICE HEADER */
 @media screen and (max-width:550px) {
-    .system-menu img {
-        width: 100x;    
+    .system-menu .menu-wrapper img  {
+        width: 100px;    
     }
 
     .main-header{
         padding: 0 20px;
         height: 50px;
     }
+
+    img.header-logo{
+        width: 30px;
+        margin-top: 10px;
+    }
+    
 }
 
 
@@ -203,4 +209,37 @@ img.header-logo{
         display: block;
     }
 
+}
+
+
+.form-wrapper{
+    width: auto;
+    margin: 1rem 80px;
+}
+
+
+
+
+
+
+
+
+
+/* BOOTSTRAP REMOVE OUTLINES */
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
 }
